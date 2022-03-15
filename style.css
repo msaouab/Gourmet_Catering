@@ -2,10 +2,6 @@
 	margin: 0;
 }
 
-body {
-	/* background-color: #ccc; */
-}
-
 header {
 	background-color: #fff;
 	position: fixed;
@@ -45,15 +41,8 @@ header {
 	display: flex;
 	position: absolute;
 	right: 16px;
-	padding: 0;
 	margin-top: 8px;
 }
-
-li {
-	display: block;
-	padding: 8px 16px;
-}
-
 
 li:hover {
 	background-color: #ccc;
@@ -68,9 +57,15 @@ li a {
 	cursor: pointer;
 	line-height: 1.5;
 	font-weight: 100;
-	overflow: hidden;	
 	text-decoration: none;
 	color: #000;
+	padding: 0;
+	display: block;
+}
+
+.navbar {
+	outline: 0;
+	padding: 8px 16px;
 }
 
 main {
@@ -87,6 +82,7 @@ main {
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	height: auto;
 }
 
 #tag_main h1 {
@@ -104,45 +100,213 @@ main {
 	font-size: 36px;
 }
 
-.section {
-	border: 1px solid red;
-	max-width: 1100px;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 12px 64px;
-	/* padding-bottom: 64px; */
-	display: block;
-	position: relative;
-}
+/*		About		*/
 
-.left {
-	/* align-items:flex-start; */
-	/* float: left; */
-	/* position: absolute; */
-	/* bottom: 0; */
+.section {
+	display: flex;
+	position: relative;
+	padding: 64px 0;
+	max-width: 1100px;
+	margin: auto;
 }
 
 .right {
-	/* font-family: "Playfair Display"; */
-	/* font-weight: 400; */
-	/* float: right; */
+	text-align: center;
+	line-height: 1.5;
 }
 
-.right h1 {
+h1 {
 	font-family: "Playfair Display";
 	font-size: 36px;
 	font-weight: 400;
-	line-height: 1.5;
-	letter-spacing: 4px;
-}
-
-.right h6 {
-	font-family: "Playfair Display";
 	letter-spacing: 5px;
+	padding-left: 1px;
+	margin: 18px 0;
+}
+
+.right h4 {
+	font-family: "Playfair Display";
+	font-weight: 400;
+	letter-spacing: 5px;
+	padding: 25px 0 12px 1px;
 	font-size: 18px;
 }
 
-.right .f-para {
-	margin-top: 18px;
+.para {
+	font-family: "Times New Roman", Georgia, Serif;
 	font-size: 18px;
+	text-align: left;
+	margin: 0 24px;
+	padding: 6px 1px;
+}
+
+.f-para span {
+	background-color: #F1F1F1;
+	padding: 3px 8px 4px 8px;
+	text-align: center;
+}
+
+.s-para {
+	color: #757575!important;
+	padding: 12px 1px;
+
+}
+
+.left img {
+	margin: 8px 24px;
+	width: 501px;
+	opacity: 0.75;
+	border-radius: 4px;
+}
+
+/*		hr		*/
+
+hr {
+	max-width: 1100px;
+	margin: 18px auto;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+
+/*		Menu		*/
+
+.menu {
+	justify-content: space-around;
+}
+
+.header-menu {
+	margin-right: 64px;
+}
+
+.header-menu h4 {
+	font-family: "Playfair Display";
+	font-size: 20px;
+	text-align: left;
+}
+
+.header-menu p {
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 15px;
+	text-align: left;
+	color: #757575;
+	padding-bottom: 24px;
+}
+
+.img-menu {
+	border-radius: 4px;
+	vertical-align: middle;
+	opacity: 0.75;
+}
+
+/*		contact		*/
+
+.contact {
+	flex-direction: column;
+}
+
+.contact h1 {
+	margin: 16px 20px;
+}
+
+.contact p {
+	margin: 12px 0;
+	line-height: 1.5;
+	margin: 20px 12px;
+}
+
+input {
+	font-family: "Times New Roman", Georgia, Serif;
+	width: 100%;
+	padding: 14px 8px;
+	font-size: 16px !important;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	margin: 8px;
+	color: #757575!important;
+}
+
+address {
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 18px;
+	font-style: normal;
+	color: #607d8b!important;
+	line-height: 1.5;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+#submit {
+	font-family: "Times New Roman", Georgia, Serif;
+	background-color: #f1f1f1;
+	font-size: 15px !important;
+	border: none;
+	padding: 12px 16px;
+	margin: 24px 10px;
+	text-transform:uppercase;
+	cursor: pointer;
+}
+
+#submit:hover {
+	background-color: #ccc;
+}
+
+/*		footer		*/
+
+footer {
+	background-color: #F1F1F1;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0;
+	vertical-align: middle;
+}
+
+footer a {
+	color: #000;
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 15px;
+	cursor: pointer;
+	margin-bottom: 12px;
+}
+
+footer p {
+	font-family: "Times New Roman", Georgia, Serif;
+	color: #000;
+	font-size: 15px;
+	padding: 5px;
+}
+
+/*		responsive		*/
+
+@media only screen and (max-width: 1000px) {
+	body {
+		overflow-x: hidden;
+	}
+	#navid {
+		display: none;
+	}
+	#about {
+		display: flex;
+		flex-direction: column;
+	}
+	.left img {
+		display: none;
+		width: 100%;
+		margin: auto 0;
+	}
+	#menu {
+		flex-direction: column;
+		display: none;
+	}
+
+	.img-menu {
+		display: block;
+		flex-direction: column;
+	}
+	input {
+		width: 90%;
+		margin-left: 15px;
+	}
+	#submit {
+		margin-left: 15px;
+	}
 }

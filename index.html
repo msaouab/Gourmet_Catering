@@ -12,9 +12,9 @@
 		<header>
 			<h4 id="logo"><a href="index.html">Gourmet au Catering</a></h4>
 			<ul id="navid">
-				<li><a class="navbar" href="">About</a></li>
-				<li><a class="navbar" href="">Menu</a></li>
-				<li><a class="navbar" href="">Contact</a></li>
+				<li><a class="navbar" href="#tag_about">About</a></li>
+				<li><a class="navbar" href="#tag_menu">Menu</a></li>
+				<li><a class="navbar" href="#tag_contact">Contact</a></li>
 			</ul>
 		</header>
 		<main>
@@ -24,11 +24,14 @@
 					<h1 class="Catering">Le Catering</h1>
 				</div>
 			</article>
-			<article class="about section" id="tag_about">
+			<article class="about section" id="about">
+				<div class="left">
+					<img class="img_about" src="/img/tablesetting2.jpeg" alt="tablesetting2">
+				</div>
 				<div  class="right">
 					<h1>About Catering</h1>
-					<h6>Tradition since 1889</h6>
-					<p class="f-para">
+					<h4>Tradition since 1889</h4>
+					<p class="f-para para">
 						The Catering was founded in blabla by Mr. 
 						Smith in lorem ipsum dolor sit amet, consectetur adipiscing 
 						elit consectetur adipiscing elit, sed do eiusmod tempor 
@@ -38,7 +41,7 @@
 						reprehenderit in voluptate velit esse cillum dolore eu fugiat 
 						nulla pariatur.We only use <span>seasonal</span> ingredients.
 					</p>
-					<p  class="s-para">
+					<p  class="s-para para">
 						Excepteur sint occaecat cupidatat non proident, 
 						sunt in culpa qui officia deserunt mollit anim id est laborum 
 						consectetur adipiscing elit, sed do eiusmod temporincididunt ut 
@@ -47,32 +50,30 @@
 						commodo consequat.
 					</p>
 				</div>
-				<div class="left">
-					<img src="/img/tablesetting2.jpeg" alt="tablesetting2">
-				</div>
 			</article>
 			<hr>
-			<article class="menu  section" id="tag_menu">
-				<div>
+			<article class="menu  section" id="menu">
+				<div class="right header-menu">
 					<h1>Our Menu</h1>
-					<h3>Bread Basket</h3>
+					<h4>Bread Basket</h4>
 					<p>Assortment of fresh baked fruit breads and muffins 5.50</p>
-					<h3>Honey Almond Granola with Fruits</h3>
+					<h4>Honey Almond Granola with Fruits</h4>
 					<p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
-					<h3>Belgian Waffle</h3>
+					<h4>Belgian Waffle</h4>
 					<p>Vanilla flavored batter with malted flour 7.50</p>
-					<h3>Scrambled eggs</h3>
+					<h4>Scrambled eggs</h4>
 					<p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
-					<h3>Blueberry Pancakes</h3>
+					<h4>Blueberry Pancakes</h4>
 					<p>With syrup, butter and lots of berries 8.50</p>
 				</div>
 				<div>
-					<img class="right" src="/img/tablesetting.jpeg" alt="tablesetting">
+					<img class="img-menu" src="/img/tablesetting.jpeg" alt="tablesetting">
 				</div>
 			</article>
 			<hr>
-			<article class="contact section" id="tag_contact">
+			<article class="contact section" id="contact">
 				<h1>Contact</h1>
+				<br>
 				<p>We offer full-service catering for any event, large or small. 
 					We understand your needs and we will cater the food to satisfy 
 					the biggerst criteria of them all, both look and taste. Do not 
@@ -86,14 +87,15 @@
 				<form>
 					<input type="text" id="fname" value="Name" name="name"><br>
 					<input type="text" id="number" value="How many People" name="number"><br>
-					<input type="date" id="reservation" value="date" name="reservation"><br>
+					<input type="date" id="reservation" value="min" min="01/01/2010" name="reservation"><br>
 					<input type="text" id="msg" value="Message / Special requirements" name="msg"><br>
-					<input type="submit" id="submit" value="SEND MESSAGE" name="submit"><br>
+					<!-- <input type="submit" id="submit" value="SEND MESSAGE" name="submit"><br> -->
+					<button id="submit">Send Message</button>
 				</form>
 			</article>
 		</main>
 		<footer>
-			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+			<p powered>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
 			<p class="footer-data creator">Coded by <span>Mohamed saouab (msaouab)</span></p>
             <a class="icon" href="https://www.linkedin.com/in/msaouab/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
             <a class="icon" href="https://twitter.com/msaouab" target="_blank"><i class="fa fa-twitter" style="font-size:24px"></i></a>
